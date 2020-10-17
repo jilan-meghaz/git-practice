@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+This is my first file
+=======
 This is my first file for my git practice project.
+>>>>>>> 19e955c2ff6ca31886ac1d6a47cd42c2ef0eea1e
