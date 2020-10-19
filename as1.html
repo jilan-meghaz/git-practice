@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add html table row</title>
+    <script>
+        function addrow()
+        {
+            
+            var table=document.getElementsByTagName('table')[0];
+            var  newrow=table.insertRow(table.rows.length);
+            var cell0= newRow.insertCell(0);
+            var cell1= newRow.insertCell(1);
+            
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="addrow()"><AddRow</button>
+    <table>
+        <tr>
+        <th>first</th>
+        <th>second</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+        </tr>
+
+        
+        
+        
+
+    </table>
+
+    
+</body>
+</html>

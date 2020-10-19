@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Form</title>
+</head>
+<body>
+
+<table align="center">
+<tr>
+<td>Name:</td>
+<td><input type="text" id="name" placeholder="Name"></td>
+</tr>
+<tr>
+<td>Age:</td>
+<td><input type="text" id="age" placeholder="Age"></td>
+</tr>
+<tr>
+<td><button id="entry">Submit</button></td> 
+</tr>
+</table>
+<table id="display" border=1 align="center">
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+</table>
+<script>
+var entry=document.getElementById("entry");
+entry.addEventListener("click", AddRow);
+var row=1;
+
+
+function AddRow()
+{
+   
+    var name=document.getElementById("name").value;
+     var age=document.getElementById("age").value;
+     if(!name || !age )
+     {
+         alert("please fill the details");
+         return;
+     }
+  
+    var display=document.getElementById("display");
+    var newRow=display.insertRow(row);
+    var cell1=newRow.insertCell(0);
+    var cell2=newRow.insertCell(1);
+
+    cell1.innerHTML=name;
+    cell2.innerHTML=age;
+    row++;
+
+}
+</script>
+</body>
+</html>

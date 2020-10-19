@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+         padding: 10px;
+        }
+        button {
+          background-color: #4CAF50;  
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+        }
+        .button1 {border-radius: 2px;}
+    </style>
+    
+</head>
+<body>
+    <table id="myTable";style="width:100%";
+    background-color: #f1f1c1;>
+        
+        <tr>
+            <th style="background-color:#1900ff">Firtname</th>
+            <th style="background-color:#1900ff">Lastname</th>
+            <th style="background-color:#1900ff">Designation</th>
+        </tr>
+        <tr>
+            <td>Vijaypriya</td>
+            <td>Krishnaswamy</td>
+            <td>Senior</td>
+        </tr>
+        <tr>
+            <td>Shathana</td>
+            <td>Sundaram</td>
+            <td>Junior</td>
+        </tr>
+        <tr>
+            <td>Chiran</td>
+            <td>jeevi</td>
+            <td>Junior</td>
+        </tr>
+    </table>  
+    <br>  
+    <button onclick="addRow()";class="button button1">Create row</button>
+
+    
+    <script>
+            function addRow()
+            {
+            var table = document.getElementById('myTable');
+            var row = table.insertRow(4);
+            var Firstname = row.insertCell(0);
+            var Lastname = row.insertCell(1);
+            var Designation = row.insertCell(2);
+            Firstname.innerHTML = "Divya";
+            Lastname.innerHTML = "KK";
+            Designation.innerHTML = "Senior"
+            }
+    </script>       
+    </table>
+    
+</body>
+</html>
