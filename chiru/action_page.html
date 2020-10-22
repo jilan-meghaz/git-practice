@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        console.log("chiranjeevi")
+        console.log(window.location.href)
+        var loc=window.location.href.split("?")
+
+        console.log(loc[1])
+        var chiru= loc[1].split("=")
+        console.log(chiru[1])
+        var krish=document.getElementById("demo")
+        console.log(krish)
+        krish.innerText="hello"+" "+chiru[1];
+    </script>
+
+</body>
+</html>
