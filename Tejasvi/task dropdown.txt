@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Your orders</a>
+    <a href="#"> petsYour</a>
+    <a href="#">Your prime video</a>
+    <a href="#">Your Music library</a>
+    <a href="#">Your watchlist</a>
+    <a href="#">switch accounts</a>
+    <a href="#">sign out</a>
+  </div>
+</div>
+
+</body>
+</html>
