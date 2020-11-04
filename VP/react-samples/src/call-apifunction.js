@@ -1,13 +1,18 @@
-import apicall from './services/api-service';
+import apicall, {getInfoBloom} from './services/api-service';
 
-const Display = (data) => {
+const Display = (res) => {
     const fetchJsonValue = () => {
-        console.log('In fetchJsonValue ', data)
+        console.log('In fetchJsonValue ')
         //https://jsonplaceholder.typicode.com/todos/1
         //https://jsonplaceholder.typicode.com/users
-        const url = "https://jsonplaceholder.typicode.com/posts/1/comments";
-        apicall(url).then(data => {
-            console.log('data is not empty ********** ',data)
+
+        // const url = "https://jsonplaceholder.typicode.com/posts/1/comments";
+        // apicall(url).then(data => {
+        //     console.log('data is not empty ********** ',data)
+        // });
+
+        getInfoBloom("https://bloomlms.azure-api.net/student/v1/1/profile").then((data) => {
+            console.log('bloom data is : ',data);
         });
     }
 
