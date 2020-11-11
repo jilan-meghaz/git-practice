@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array iteration </title>
+
+</head>
+
+<body>
+     <p id="demo"></p>
+<script>
+    var number1=[25,35,42,56,89];
+    var number2=number1.map(myFunction);
+    function myFunction(value){
+        return value*5;
+    }
+    document.getElementById("demo").innerHTML=number2;
+</script>    
+</body>
+</html>
+        
+    
