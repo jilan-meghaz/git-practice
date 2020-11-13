@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BottomPadding</title>
+        <style>
+            .outer {
+                border: 1px solid #ffffff;
+                background-color: #ffb08a;
+            }
+            .middle {
+                margin: 20px;
+                padding-bottom: 20px;
+                border: 10px solid #000000;
+                background-color: #ceb379;
+            }
+            .inner {
+                height: 10px;
+                border: 1px solid #ffffff;
+                background-color: #ffffff;
+            }
+        </style>
+        <script type="text/javascript">
+            function ChangePaddingBottom () {
+                var middleDiv = document.getElementById ("middleDiv");
+                var paddingInput = document.getElementById ("paddingInput");
+    
+                middleDiv.style.paddingBottom = paddingInput.value + "px";
+            }
+        </script>
+    </head>
+    <body>
+        <table cellpadding="0px" cellspacing="10px">
+            <tr>
+                <td style="background-color: red;">&nbsp;</td>
+                <td>margin</td>
+                <td style="background-color: grey;">&nbsp;</td>
+                <td>border</td>
+                <td style="background-color: greenyellow;">&nbsp;</td>
+                <td>padding</td>
+            </tr>
+        </table>
+        <div class="outer">
+            <div id="middleDiv" class="middle">
+                <div class="inner"></div>
+            </div>
+        </div>
+        <br />
+        paddingBottom: 
+        <input id="paddingInput" type="text" value="40" size="2" /> 
+        <button onclick="ChangePaddingBottom ();">Change</button>
+    </body>
+</html>

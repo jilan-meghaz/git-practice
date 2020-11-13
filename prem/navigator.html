@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>This is a navigation object</h1>
+    <div id="demo"></div>
+    <script>
+        var  a = "";
+        a += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+        a += "<p>Browser Name: " + navigator.appName + "</p>";
+        a += "<p>Browser Version: " + navigator.appVersion + "</p>";
+        a += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+        a += "<p>Browser Language: " + navigator.language + "</p>";
+        a += "<p>Browser Online: " + navigator.onLine + "</p>";
+       
+        document.getElementById("demo").innerHTML = a;
+        </script>
+</body>
+</html>

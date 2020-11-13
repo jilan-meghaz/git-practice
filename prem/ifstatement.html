@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<body>
+    <p>"HI ALL GOOD EVENING GUYS" if the hour is lessthan 20:00 :</p>
+
+    <button onClick = "myFunction()"> click me</button>
+    <p id = "demo">Good Evening</p>
+    <script>
+        function myFunction()
+        {
+        if(new Date().getHours()<20)
+        {
+            document.getElementById("demo").innerHTML = "HI ALL GOOD EVENING GUYS";
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h1> Simple Login Page</h1>
+        <form name="login">
+        Username<input type="text" name="userid"/>
+        Password<input type="password" name="pswrd"/>
+        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="Cancel"/>
+        </form>
+        
+        <script>
+        function check(form)
+        {
+         
+         if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+          {
+            window.open('target.html')
+          }
+         else
+         {
+           alert("Error Password or Username")
+          }
+        }
+        </script>
+    </body>
+</html>
