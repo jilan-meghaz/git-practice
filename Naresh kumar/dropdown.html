@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dropdown menu using select tab</title>
+  <style>
+    body{
+      background-color: burlywood;
+    }
+
+  </style>
+</head>
+<script>
+function favCollege() {
+var mylist = document.getElementById("myList");
+document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;
+}
+</script>
+
+<body>
+<form>
+<b> Select you favourite tutorial site using dropdown list </b>
+<select id = "myList" onchange = "favCollege()" >
+<option> ---Choose Colleges--- </option>
+<option> Francis College </option>
+<option> Royal College </option>
+<option> Princeton College </option>
+<option> Villamary College </option>
+</select>
+<p> Your selected College site is: 
+<input type = "text" id = "favourite" size = "20" </p>
+</form>
+</body>
+</html>

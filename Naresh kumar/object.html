@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<style>
+  h1{
+    background-color: lavenderblush;
+  }
+  body{
+    background-color: lightgreen;
+  }
+  p{
+    background-color: lightpink;
+  }
+</style>
+
+<body>
+  <h1>Creating an Object</h1>
+  <p id="demo"></p>
+  <script>
+
+// Creating an object:
+    var person = {
+      firstName: "Gaurav",
+      lastName: "Jain",
+      age: 32,
+      eyeColor: "blue"
+    };
+    
+    // Display some data from the object:
+    document.getElementById("demo").innerHTML =
+    person.firstName + " is " + person.age + " years old.";
+    </script>
+    
+</body>
+</html>

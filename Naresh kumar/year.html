@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>year display</title>
+  <style>
+     body{
+        background-color: cadetblue;
+     }
+     button{
+        background-color: lightgreen;
+     }
+  </style>
+</head>
+    <body>
+      <p>Click below to get the current year:</p>
+      <button onclick="display()">Display Year</button>
+      <p id="test"></p>
+      <script>
+         function display() {
+            var date = new Date();
+            var res = date.getFullYear();
+            document.getElementById("test").innerHTML = res;
+         }
+      </script>
+   </body>
+</html>
+
+
